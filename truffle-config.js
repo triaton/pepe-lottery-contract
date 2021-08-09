@@ -1,5 +1,7 @@
 var HDWalletProvider = require("@truffle/hdwallet-provider");
-const MNEMONIC = '0xe739b65129fe42a8c827a9e015368625e7c895676a8a59dd6ae930e76a83ae81';
+const dotenv = require('dotenv');
+dotenv.config();
+const MNEMONIC = process.env.MNEMONIC;
 
 /**
  * Use this file to configure your truffle project. It's seeded with some
